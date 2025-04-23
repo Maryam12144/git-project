@@ -6,6 +6,11 @@ on:
   pull_request:
     branches: [main]
   workflow_dispatch:
+    inputs:
+      message:
+        description: 'Message for the workflow'
+        required: true
+        default: 'Deploy now!'
 
 jobs:
   yaml-test:
@@ -15,5 +20,8 @@ jobs:
        run: echo "Hello From the Other Side!"
      - name: Print-goodbye
        run: echo "Good-Bye From the Other Side!"
+     - name: Print message
+        run: echo "Message: ${{ github.event.inputs.message }}"
+
 
 
