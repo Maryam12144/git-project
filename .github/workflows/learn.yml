@@ -21,7 +21,7 @@ jobs:
      - name: Print-goodbye
        run: echo "Good-Bye From the Other Side!"
      - name: Print message
-        run: echo "Message: ${{ github.event.inputs.message }}"
+       run: echo "Message: ${{ github.event.inputs.message }}"
 
 
 
