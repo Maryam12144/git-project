@@ -16,12 +16,9 @@ jobs:
   yaml-test:
     runs-on: ubuntu-latest
     steps:
-     - name: Print-hello
-       run: echo "Hello From the Other Side!"
-     - name: Print-goodbye
-       run: echo "Good-Bye From the Other Side!"
-     - name: Print message
-       run: echo "Message: ${{ github.event.inputs.message }}"
-
-
-
+      - name: Print-hello
+        run: echo "Hello From the Other Side!"
+      - name: Print-goodbye
+        run: echo "Good-Bye From the Other Side!"
+      - name: Print message
+        run: echo "Message: ${{ github.event.inputs.message }}"
