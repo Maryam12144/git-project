@@ -1,0 +1,16 @@
+name: learn yaml for devops
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+
+jobs:
+  yaml-test:
+    runs-on: ubuntu-latest
+    steps:
+     - name: Print-hola
+       run: echo "hello to you mr.chatgpt"
+
+
